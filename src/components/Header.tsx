@@ -17,9 +17,11 @@ function Header({}: Props) {
             alignItems="center"
             marginTop={8}
           >
-            <Typography sx={{ color: "white" }} variant="h3">
-              WE ARE CREATIVES
-            </Typography>
+            <Grid display="flex" justifyContent="center" alignItems="center">
+              <Typography sx={{ color: "white" }} variant="h3">
+                WE ARE CREATIVES
+              </Typography>
+            </Grid>
           </Grid>
           <Grid
             display="flex"
@@ -27,7 +29,7 @@ function Header({}: Props) {
             alignItems="center"
             marginTop={15}
           >
-            <SouthIcon sx={{fontSize:100,color:"white"}}/>
+            <SouthIcon sx={{ fontSize: 100, color: "white" }} />
           </Grid>
         </Paper>
       </Grid>
