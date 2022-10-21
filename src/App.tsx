@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container >
         <Sec1 />
         <Sec2 />
         <Sec3 />

@@ -9,7 +9,7 @@ function Sec3({}: Props) {
   return (
     <>
       <Grid xs={6}>
-        <div className="bgcherry" style={{minHeight:600}}>
+        <div className="bgcherry" style={{height:590}}>
           <Grid display="flex" justifyContent="center" alignItems="center">
             <Typography
               sx={{ color: "white", marginTop: 45 }}
@@ -33,7 +33,7 @@ function Sec3({}: Props) {
         </div>
       </Grid>
       <Grid xs={6}>
-        <div className="bgorang">
+        <div className="bgorang" style={{height:590}}>
           <Grid display="flex" justifyContent="center" alignItems="center">
             <Typography
               sx={{ color: "white", marginTop: 45 }}

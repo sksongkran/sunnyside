@@ -48,3 +48,10 @@ img {
 .position{
     margin-top: 50;
 }
+
+.procen{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
