@@ -55,3 +55,14 @@ img {
   margin-right: auto;
   width: 40%;
 }
+
+.bgfoot{
+  background-color: #87d5c6;
+  height: 400px;
+}
+
+.cenn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
