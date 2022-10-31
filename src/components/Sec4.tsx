@@ -38,7 +38,7 @@ function Sec4({}: Props) {
           spacing={{ xs: 2, md: 3 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Grid item xs={2} sm={4} md={4}>
+          <Grid item xs={4} sm={8} md={4}>
             <Avatar src={emily} sx={{height:60,width:60}} className="procen"/>
             <Typography sx={{ textAlign: "center" }} marginTop={5}>
               We put our trust in Sunnyside and they <br />
@@ -52,7 +52,7 @@ function Sec4({}: Props) {
             Marketing Director
             </Typography>
           </Grid>
-          <Grid item xs={2} sm={4} md={4}>
+          <Grid item xs={4} sm={8} md={4}>
           <Avatar src={thomas} sx={{height:60,width:60}} className="procen"/>
             <Typography sx={{ textAlign: "center" }} marginTop={5}>
               Sunnyside’s enthusiasm coupled with their <br />
@@ -66,7 +66,7 @@ function Sec4({}: Props) {
             Chief Operating Officer
             </Typography>
           </Grid>
-          <Grid item xs={2} sm={4} md={4} marginBottom={15}>
+          <Grid item xs={4} sm={8} md={4} marginBottom={15}>
           <Avatar src={jennie} sx={{height:60,width:60}} className="procen"/>
             <Typography sx={{ textAlign: "center" }} marginTop={5}>
               Incredible end result! Our sales increased
