@@ -1,9 +1,9 @@
 .bgheader {
-  display: block;
+  min-height: 100vh;
   background-image: url("../img/image-header.jpg");
-  background-position-y: 60%;
-  background-position-x: 50%;
-  background-size: 1380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 img {
@@ -29,40 +29,107 @@ img {
 
 .bgcherry {
   background-image: url("../img/image-graphic-design.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .bgorang {
   background-image: url("../img/image-photography.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .sec3 {
-    display: block;
-    text-align: center;
-  }
-
-.position{
-    margin-top: 50;
+  display: block;
+  text-align: center;
 }
 
-.procen{
+.position {
+  margin-top: 50;
+}
+
+.procen {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
-.bgfoot{
+.bgfoot {
   background-color: #87d5c6;
   height: 400px;
 }
 
-.cenn{
+.cenn {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.transform{
+  display: grid;
+  gap: 0;
+  grid-template-columns: 50% 50%;
+}
+.transform-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.transform-text .title{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.transform-text .desc{
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.transform-text .btn{
+  text-transform: uppercase;
+  color: hsl(0, 0%, 25%);
+  font-size: 1.3rem;
+  position: relative;
+  width: fit-content;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.transform-text .btn .text{
+  padding-bottom: .5rem;
+}
+.transform-text .btn .text::before{
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  height: 10px;
+  left: 0%;
+  width: 100%;
+  opacity: 0.2;
+  border-radius: 1rem;
+  background: var(--SoftRed)
+}
+
+.transform-text .btn .text:hover::before{
+  opacity: .5;
+}
+.transform-text .btn .tra-deco{
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  height: 10px;
+  left: 0%;
+  width: 100%;
+  opacity: 0.2;
+  border-radius: 1rem;
+  background: var(--Yellow);
+}
+
+.transform-img img{
+height: 100%;
+width: 100%;
+object-fit: cover;
 }

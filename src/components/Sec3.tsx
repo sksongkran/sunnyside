@@ -1,7 +1,4 @@
-import { Grid, Paper, Typography } from "@mui/material";
-import React from "react";
-import gra from "../img/image-graphic-design.jpg";
-import pho from "../img/image-photography.jpg";
+import { Grid, Typography } from "@mui/material";
 import "./sunny.css";
 type Props = {};
 
@@ -9,11 +6,11 @@ function Sec3({}: Props) {
   return (
     <>
       <Grid container columns={{ xs: 4, sm: 8, md: 12 }} marginTop={-0.5}>
-        <Grid item xs={6} sm={6} md={6}>
+        <Grid item xs={6} sm={8} md={6}>
           <div className="bgcherry" style={{ height: 590 }}>
             <Grid display="flex" justifyContent="center" alignItems="center">
               <Typography
-                sx={{ color: "white", marginTop: 45 }}
+                sx={{ color: "#27574F", marginTop: 45 }}
                 variant="h3"
                 className="sec3"
               >
@@ -22,7 +19,7 @@ function Sec3({}: Props) {
             </Grid>
             <Grid display="flex" justifyContent="center" alignItems="center">
               <Typography
-                sx={{ color: "white", marginTop: 5, marginBottom: 9 }}
+                sx={{ color: "#27574F", marginTop: 5, marginBottom: 9 }}
                 variant="body1"
                 className="sec3"
               >
@@ -33,11 +30,11 @@ function Sec3({}: Props) {
             </Grid>
           </div>
         </Grid>
-        <Grid item xs={6} sm={6} md={6}>
+        <Grid item xs={6} sm={8} md={6}>
           <div className="bgorang" style={{ height: 590 }}>
             <Grid display="flex" justifyContent="center" alignItems="center">
               <Typography
-                sx={{ color: "white", marginTop: 45 }}
+                sx={{ color: "#175266", marginTop: 45 }}
                 variant="h3"
                 className="sec3"
               >
@@ -46,7 +43,7 @@ function Sec3({}: Props) {
             </Grid>
             <Grid display="flex" justifyContent="center" alignItems="center">
               <Typography
-                sx={{ color: "white", marginTop: 5, marginBottom: 9 }}
+                sx={{ color: "#175266", marginTop: 5, marginBottom: 9 }}
                 variant="body1"
                 className="sec3"
               >
