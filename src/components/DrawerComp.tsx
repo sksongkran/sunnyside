@@ -8,41 +8,47 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-type Props = {};
 
-function DrawerComp({}: Props) {
+const DrawerComp = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <Drawer anchor="top" open={open} onClose={() => setOpen(false)}>
+      <Drawer
+        PaperProps={{
+          sx: { backgroundColor: "#19C0FC" },
+        }}
+        anchor="top"
+        open={open}
+        onClose={() => setOpen(false)}
+      >
         <List>
           <ListItemButton>
             <ListItemIcon>
-              <ListItemText>About</ListItemText>
+              <ListItemText sx={{ color: "white" }}>About</ListItemText>
             </ListItemIcon>
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <ListItemText>Services</ListItemText>
+              <ListItemText sx={{ color: "white" }}>Services</ListItemText>
             </ListItemIcon>
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <ListItemText>Projects</ListItemText>
+              <ListItemText sx={{ color: "white" }}>Projects</ListItemText>
             </ListItemIcon>
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <ListItemText>Contact</ListItemText>
+              <ListItemText sx={{ color: "white" }}>Contact</ListItemText>
             </ListItemIcon>
           </ListItemButton>
         </List>
       </Drawer>
-      <IconButton onClick={()=>setOpen(!open)}>
+      <IconButton onClick={() => setOpen(!open)}>
         <MenuIcon />
       </IconButton>
     </>
   );
-}
+};
 
 export default DrawerComp;

@@ -9,9 +9,8 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
-type Props = {};
 
-function Nav({}: Props) {
+const Nav = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -30,21 +29,21 @@ function Nav({}: Props) {
           </Typography>
         </Grid>
 
-        {isMatch ? (
-          <>
-            <div style={{marginLeft:15}}>
-              <DrawerComp />
-            </div>
-          </>
-        ) : (
-          <Grid
-            xs={4}
-            sm={4}
-            md={4}
-            display="flex"
-            justifyContent="right"
-            alignItems="right"
-          >
+        <Grid
+          xs={4}
+          sm={4}
+          md={4}
+          display="flex"
+          justifyContent="right"
+          alignItems="right"
+        >
+          {isMatch ? (
+            <>
+              <div style={{ marginLeft: 15 }}>
+                <DrawerComp />
+              </div>
+            </>
+          ) : (
             <Stack direction="row" spacing={2}>
               <Button sx={{ borderRadius: 5, color: "white" }} variant="text">
                 <b>About</b>
@@ -66,11 +65,11 @@ function Nav({}: Props) {
                 <b>Contact</b>
               </Button>
             </Stack>
-          </Grid>
-        )}
+          )}
+        </Grid>
       </Grid>
     </Box>
   );
-}
+};
 
 export default Nav;
